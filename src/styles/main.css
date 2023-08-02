@@ -479,7 +479,7 @@ main a:focus,main a:hover {
 }
 
 main ol,main ul {
-  padding-left: 0
+  padding-left: 0;
 }
 
 main li {
@@ -554,6 +554,9 @@ main ul a:focus,main ul a:hover {
 
 main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main table {
   display: block;
