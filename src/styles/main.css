@@ -89,8 +89,9 @@ h1 {
   padding: 0 5px;
   text-align: center;
   color: #fff;
-  background-color: #2a2f37;
-  font-size: 30px
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -268,8 +269,14 @@ nav > ul > li > a:focus,nav > ul > li > a:hover {
   transition: .15s ease-in;
   font-weight: 700;
   color: #fff;
-  line-height: 40px
+  line-height: 40px;
+  width: 180px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .bl_nav__link:focus,.bl_nav__link:hover {
   color: #ff9e2c
@@ -911,5 +918,46 @@ div > .dropdown__list > li::before {
   nav > ul > li >a {
     font-size: 13px;
     padding: 7px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  h1 {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .header_logo > img {
+    width: 150px;
+  }
+
+  nav > ul > li >a {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .bonus {
+    width: 100%;
+  }
+
+  .homeImage_pic {
+    width: 280px;
+    height: 210px;
+  }
+
+  nav {
+    left: 20px;
+  }
+
+  .bl_nav__link {
+    width: 130px;
+    height: 30px;
   }
 }
